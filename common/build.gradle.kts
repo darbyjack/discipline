@@ -4,6 +4,13 @@ plugins {
 
 dependencies {
     api(projects.disciplineApi)
+
+
+    // Configs
+    api(libs.configurateHocon)
+    api(libs.adventureSerializerConfigurate4) {
+        isTransitive = false
+    }
     api(libs.typesafeConfig)
 
     // Cloud
@@ -12,4 +19,6 @@ dependencies {
     api(libs.cloudMinecraftExtras) {
         isTransitive = false
     }
+
+    api(libs.guice)
 }

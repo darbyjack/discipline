@@ -17,6 +17,7 @@ versions:
   typesafeConfig: 1.4.1
   checkerQual: 3.21.0
   stylecheck: 0.1
+  guice: 5.0.1
   paperApi: 1.16.5-R0.1-SNAPSHOT
   paperLib: 1.0.8-SNAPSHOT
   velocityApi: 3.1.0
@@ -63,6 +64,11 @@ dependencies:
   cloudVelocity:
     group: cloud.commandframework
     name: cloud-velocity
+
+  guice:
+    group: com.google.inject
+    name: guice
+    version: { ref: guice }
 
   configurateCore:
     group: org.spongepowered
